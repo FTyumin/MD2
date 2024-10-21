@@ -1,25 +1,25 @@
-﻿namespace MD2
-{
+﻿
+namespace MD2;
+
+using MD1;
     public partial class MainPage : ContentPage
     {
         int count = 0;
+        DataManager dm;
+
 
         public MainPage()
         {
             InitializeComponent();
+            dm = new DataManager();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        async void OnButtonClicked(object sender, EventArgs args)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        
+            await Navigation.PushAsync(new ViewData());
+            
         }
     }
 
-}
+
