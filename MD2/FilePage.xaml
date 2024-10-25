@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MD2.FilePage"
+             Title="FilePage">
+    <VerticalStackLayout Spacing="20">
+        <Button 
+            x:Name="LoadBtn"
+            Text="Load data from a file"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="LoadBtn_Clicked"
+            WidthRequest="200"/>
+
+        <Button 
+            x:Name="SaveBtn"
+            Text="Save to a file"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="SaveBtn_Clicked"
+            WidthRequest="200"/>
+
+        <Entry 
+            x:Name="FileName"
+            Text="Filename"
+            WidthRequest="200"
+            Completed="OnEntryCompleted"/>
+    </VerticalStackLayout>
+</ContentPage>

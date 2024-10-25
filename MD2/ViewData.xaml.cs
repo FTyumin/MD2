@@ -3,13 +3,12 @@ using MD1;
 
 public partial class ViewData : ContentPage
 {
-DataManager dm = new DataManager();
-        // ieladējam datus, citādi saraksti būs tukši
-        
+
+    // ieladējam datus, citādi saraksti būs tukši
+    DataManager dm = GlobalVariables.dm;
     public ViewData()
     {
         InitializeComponent();
-        dm.createTestData();
     }
 
     void OnButtonClicked(object sender, EventArgs args)
@@ -42,5 +41,10 @@ DataManager dm = new DataManager();
     private void SubmissionBtn_Clicked(object sender, EventArgs e)
     {
         data.Text = dm.print("submissions");
+    }
+
+    private void LoadBtn_Clicked(object sender, EventArgs e)
+    {
+        dm.createTestData();
     }
 }

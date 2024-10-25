@@ -19,7 +19,14 @@
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 Clicked="OnButtonClicked" />
-           
+
+            <Button 
+                x:Name="DataFile"
+                Text="Load to/from a file"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="DataFile_Clicked" />
+
 
         </VerticalStackLayout>
     </ScrollView>

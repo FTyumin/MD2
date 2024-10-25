@@ -43,7 +43,15 @@
             HorizontalOptions="Center"
             Clicked="SubmissionBtn_Clicked"
             WidthRequest="200"/>
-
+        
+        <Button 
+            x:Name="LoadBtn"
+            Text="Load Test Data"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="LoadBtn_Clicked"
+            WidthRequest="200"/>
+        
         <Label 
             x:Name="data"
             HeightRequest="100"
