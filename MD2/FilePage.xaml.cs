@@ -1,4 +1,4 @@
-using MD1;
+﻿using MD1;
 
 namespace MD2;
 
@@ -23,7 +23,7 @@ public partial class FilePage : ContentPage
         }
         else
         {
-            // Handle the case where no file path is provided
+            // Ja nav ievadīts ceļš uz datni
             DisplayAlert("Error", "Please enter a valid file path.", "OK");
         }
     }
@@ -37,7 +37,7 @@ public partial class FilePage : ContentPage
         }
         else
         {
-            // Handle the case where no file path is provided
+            // Ja nav ievadīts ceļš uz datni
             DisplayAlert("Error", "Please enter a valid file path.", "OK");
         }
 

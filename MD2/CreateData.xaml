@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MD2.CreateData"
+             Title="CreateData">
+    <VerticalStackLayout Spacing="20">
+        <Button 
+         x:Name="StudentBtn"
+         Text="Add students"
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         Clicked="StudentBtn_Clicked"
+         WidthRequest="200"/>
+
+        <Button 
+         x:Name="AssignmentBtn"
+         Text="Add assignments"
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         Clicked="AssignmentBtn_Clicked"
+         WidthRequest="200"/>
+
+        <Button 
+         x:Name="SubmissionBtn"
+         Text="Add submissions"
+         VerticalOptions="Center"
+         HorizontalOptions="Center"
+         Clicked="SubmissionBtn_Clicked"
+         WidthRequest="200"/>
+
+
+    </VerticalStackLayout> 
+</ContentPage>

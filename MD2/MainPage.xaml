@@ -12,20 +12,32 @@
                 Text="Student Info"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                Clicked="OnButtonClicked" />
+                Clicked="OnButtonClicked"
+                WidthRequest="200"/>
+            
             <Button 
                 x:Name="DataView"
                 Text="View Data"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                Clicked="OnButtonClicked" />
+                Clicked="OnButtonClicked"
+                WidthRequest="200"/>
 
             <Button 
                 x:Name="DataFile"
                 Text="Load to/from a file"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                Clicked="DataFile_Clicked" />
+                Clicked="DataFile_Clicked"
+                WidthRequest="200"/>
+
+            <Button 
+                x:Name="CreateFile"
+                Text="Create Data"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="CreateFile_Clicked"
+                WidthRequest="200"/>
 
 
         </VerticalStackLayout>
