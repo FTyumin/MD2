@@ -1,15 +1,15 @@
 using MD1;
+using MD2.EditPages;
 using System.Collections.ObjectModel;
 
 namespace MD2;
 
-public partial class EditDeletePage : ContentPage
+public partial class EditDelete : ContentPage
 {
     private DataManager dm;
     public ObservableCollection<Assignment> Assignments { get; set; }
     public ObservableCollection<Submission> Submissions { get; set; }
-
-    public EditDeletePage()
+    public EditDelete()
     {
         InitializeComponent();
         dm = GlobalVariables.dm;
@@ -22,7 +22,6 @@ public partial class EditDeletePage : ContentPage
         SubmissionListView.ItemsSource = Submissions;
     }
 
-    // Edit Assignment
     private async void OnEditAssignmentClicked(object sender, EventArgs e)
     {
         var button = sender as Button;
@@ -30,7 +29,7 @@ public partial class EditDeletePage : ContentPage
 
         if (assignment != null)
         {
-            await Navigation.PushAsync(new EditAssignmentPage(assignment));
+            await Navigation.PushAsync(new EditAssignment(assignment));
         }
     }
 
@@ -43,7 +42,7 @@ public partial class EditDeletePage : ContentPage
         if (assignment != null)
         {
             Assignments.Remove(assignment);
-            dm.DeleteAssignment(assignment);
+            dm.deleteAssignment(assignment);
         }
     }
 
@@ -55,7 +54,7 @@ public partial class EditDeletePage : ContentPage
 
         if (submission != null)
         {
-            await Navigation.PushAsync(new EditSubmissionPage(submission));
+            await Navigation.PushAsync(new EditSubmission(submission));
         }
     }
 
@@ -68,7 +67,8 @@ public partial class EditDeletePage : ContentPage
         if (submission != null)
         {
             Submissions.Remove(submission);
-            dm.DeleteSubmission(submission);
+            dm.deleteSubmission(submission);
         }
     }
 }
+

@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MD2.EditPages.EditSubmission"
              Title="EditSubmission">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Spacing="20" Padding="20">
+        <Picker x:Name="StudentPicker" Title="Select Student" />
+        <Picker x:Name="AssignmentPicker" Title="Select Assignment" />
+        <DatePicker x:Name="SubmissionDatePicker" />
+        <Entry x:Name="ScoreEntry" Placeholder="Enter Score" Keyboard="Numeric" />
+        <!--<Button Text="Save Changes" Clicked="OnSaveSubmissionClicked" />-->
     </VerticalStackLayout>
 </ContentPage>
