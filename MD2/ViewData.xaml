@@ -54,8 +54,8 @@
         
         <Label 
             x:Name="data"
-            HeightRequest="100"
-            WidthRequest="300"/>
+            HeightRequest="300"
+            WidthRequest="600"/>
 
 
     </VerticalStackLayout>
