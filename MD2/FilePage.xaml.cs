@@ -4,13 +4,13 @@ namespace MD2;
 
 public partial class FilePage : ContentPage
 {
-    
+
     private string filePath;
     public FilePage()
-	{
-		InitializeComponent();
-        
-	}
+    {
+        InitializeComponent();
+
+    }
     DataManager dm = GlobalVariables.dm;
 
     private void SaveBtn_Clicked(object sender, EventArgs e)
@@ -30,11 +30,10 @@ public partial class FilePage : ContentPage
 
     private void LoadBtn_Clicked(object sender, EventArgs e)
     {
+        filePath = FileName.Text;
         if (!string.IsNullOrWhiteSpace(filePath))
         {
-            // Example of using filePath to load data using DataManager
-            /*string loadedData = dm.load(filePath);*/ // You need to implement this in DataManager
-            /*SaveBtn.Text = loadedData;*/ // Display loaded data in a button as an example
+            dm.load(filePath);
         }
         else
         {
@@ -47,6 +46,5 @@ public partial class FilePage : ContentPage
     void OnEntryCompleted(object sender, EventArgs e)
     {
         filePath = ((Entry)sender).Text;
-
     }
 }
