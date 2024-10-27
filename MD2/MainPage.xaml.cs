@@ -29,6 +29,11 @@ using MD1;
         {
             await Navigation.PushAsync(new CreateData());
         }
+
+        async void CreateAssignment_Clicked(object sender, EventArgs e)
+            {
+                await Navigation.PushAsync(new EditDeletePage());
+            }
 }
 
 

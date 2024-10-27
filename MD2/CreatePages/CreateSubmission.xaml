@@ -3,10 +3,43 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MD2.CreatePages.CreateSubmission"
              Title="CreateSubmission">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Spacing="20" Padding="20">
+
+        <Picker 
+            x:Name="AssignmentPicker"
+            Title="Select Assignment">
+        </Picker>
+
+        <Picker 
+            x:Name="StudentPicker"
+            Title="Select Student">
+        </Picker>
+
+        <!--.cs failā ir kods, kas uzliek šī brīža datumu-->
+        <!--<DatePicker
+            x:Name="SubmitDate"
+            MinimumDate="10/28/2024"
+            MaximumDate="12/28/2024"
+            Date="10/28/2024"
+            Format="dd/MM/yyyy"
+        />-->
+
+
+        
+        
+        <Picker 
+            x:Name="CoursePicker"
+            Title="Select Course">
+        </Picker>
+
+        <Entry 
+            x:Name="Score"
+            Placeholder="Enter Score" 
+            Keyboard="Numeric"
+        /> 
+        <Button 
+            Text="Save Submission" 
+            Clicked="Button_Clicked" 
+        />
     </VerticalStackLayout>
 </ContentPage>

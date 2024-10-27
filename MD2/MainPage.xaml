@@ -7,13 +7,7 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Button 
-                x:Name="StudentBtn"
-                Text="Student Info"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                Clicked="OnButtonClicked"
-                WidthRequest="200"/>
+          
             
             <Button 
                 x:Name="DataView"
@@ -39,6 +33,13 @@
                 Clicked="CreateFile_Clicked"
                 WidthRequest="200"/>
 
+            <Button 
+                x:Name="EditDelete"
+                Text="Edit/Delete Data"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="EditDelete_Clicked"
+                WidthRequest="200"/>
 
         </VerticalStackLayout>
     </ScrollView>

@@ -81,6 +81,15 @@
 	  <MauiXaml Update="CreatePages\CreateSubmission.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="EditDeletePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="EditPages\EditAssignment.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="EditPages\EditSubmission.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="FilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

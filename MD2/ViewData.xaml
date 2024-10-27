@@ -54,7 +54,7 @@
         
         <Label 
             x:Name="data"
-            HeightRequest="300"
+            HeightRequest="600"
             WidthRequest="600"/>
 
 
