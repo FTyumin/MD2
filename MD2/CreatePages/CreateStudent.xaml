@@ -4,14 +4,14 @@
              x:Class="MD2.CreatePages.CreateStudent"
              Title="CreateStudent">
     <VerticalStackLayout Spacing="20" Padding="20">
-        <Entry x:Name="StudentNameEntry" Placeholder="Enter Student Name" />
-        <Entry x:Name="StudentSurnameEntry" Placeholder="Enter Student Surname" />
-        <Picker x:Name="GenderPicker" Title="Select Gender">
+        <Entry x:Name="StudentNameEntry" Placeholder="Enter Student Name" WidthRequest="300" />
+        <Entry x:Name="StudentSurnameEntry" Placeholder="Enter Student Surname" WidthRequest="300" />
+        <Picker x:Name="GenderPicker" Title="Select Gender" WidthRequest="300">
             <Picker.Items>
                 <x:String>Male</x:String>
                 <x:String>Female</x:String>
             </Picker.Items>
         </Picker>
-        <Button Text="Save Student" Clicked="OnSaveStudentClicked" />
+        <Button Text="Save Student" Clicked="OnSaveStudentClicked" WidthRequest="300" />
     </VerticalStackLayout>
 </ContentPage>

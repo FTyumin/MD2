@@ -10,7 +10,8 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Clicked="TeacherBtn_Clicked"
-            WidthRequest="200"/>
+            WidthRequest="200"
+            BackgroundColor="#2E294E"/>
 
         <Button 
             x:Name="StudentBtn"
@@ -18,7 +19,8 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Clicked="StudentBtn_Clicked"
-            WidthRequest="200"/>
+            WidthRequest="200"
+            BackgroundColor="#2E294E"/>
 
         <Button 
             x:Name="CourseBtn"
@@ -26,7 +28,8 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Clicked="CourseBtn_Clicked"
-            WidthRequest="200"/>
+            WidthRequest="200"
+            BackgroundColor="#2E294E"/>
 
         <Button 
             x:Name="AssignmentBtn"
@@ -34,7 +37,8 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Clicked="AssignmentBtn_Clicked"
-            WidthRequest="200"/>
+            WidthRequest="200"
+            BackgroundColor="#2E294E"/>
 
         <Button 
             x:Name="SubmissionBtn"
@@ -42,7 +46,8 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Clicked="SubmissionBtn_Clicked"
-            WidthRequest="200"/>
+            WidthRequest="200"
+            BackgroundColor="#2E294E"/>
         
         <Button 
             x:Name="LoadBtn"
@@ -50,12 +55,16 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Clicked="LoadBtn_Clicked"
-            WidthRequest="200"/>
+            WidthRequest="200"
+            BackgroundColor="#4B5267"/>
+
+        <Border Stroke="Beige" StrokeThickness="8" Padding="5" HeightRequest="300" WidthRequest="600">
+            <Label 
+                x:Name="data"
+                FontSize="18"
+                />
+        </Border>
         
-        <Label 
-            x:Name="data"
-            HeightRequest="600"
-            WidthRequest="600"/>
 
 
     </VerticalStackLayout>

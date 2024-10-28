@@ -21,6 +21,6 @@
         x:Name="CoursePicker"
         Title="Select Course">
         </Picker>
-        <!--<Button Text="Save Assignment" Clicked="Button_Clicked" />-->
+        <Button Text="Save Assignment" Clicked="OnSaveChangesClicked" />
     </VerticalStackLayout>
 </ContentPage>

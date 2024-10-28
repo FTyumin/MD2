@@ -13,6 +13,7 @@ public partial class EditAssignment : ContentPage
         List<Course> result = dm.GetCourses();
 
         CoursePicker.ItemsSource = result;
+        _assignment = assignment;
     }
     private async void OnSaveChangesClicked(object sender, EventArgs e)
     {

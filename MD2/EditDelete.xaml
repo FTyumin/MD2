@@ -12,12 +12,12 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal" Padding="5">
+                            <StackLayout Orientation="Horizontal" Padding="5" Spacing="20">
                                 <Label Text="{Binding Description}" VerticalOptions="Center" />
                                 <Label Text="{Binding Deadline, StringFormat='Due: {0:MM/dd/yyyy}'}" VerticalOptions="Center" />
 
-                                <Button Text="Edit" Clicked="OnEditAssignmentClicked" CommandParameter="{Binding .}" />
-                                <Button Text="Delete" Clicked="OnDeleteAssignmentClicked" CommandParameter="{Binding .}" />
+                                <Button Text="Edit" Clicked="OnEditAssignmentClicked" CommandParameter="{Binding .}" BackgroundColor="#777DA7" />
+                                <Button Text="Delete" Clicked="OnDeleteAssignmentClicked" CommandParameter="{Binding .}" BackgroundColor="Red" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
@@ -30,12 +30,12 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal" Padding="5">
+                            <StackLayout Orientation="Horizontal" Padding="5" Spacing="20">
                                 <Label Text="{Binding Assignment.Description}" VerticalOptions="Center" />
-                                <Label Text="{Binding SubmissionTime, StringFormat='Submitted on: {0:MM/dd/yyyy}'}" VerticalOptions="Center" />
+                                <Label Text="{Binding SubmissionTime, StringFormat=' Submitted on: {0:MM/dd/yyyy}'} " VerticalOptions="Center" />
 
-                                <Button Text="Edit" Clicked="OnEditSubmissionClicked" CommandParameter="{Binding .}" />
-                                <Button Text="Delete" Clicked="OnDeleteSubmissionClicked" CommandParameter="{Binding .}" />
+                                <Button Text="Edit" Clicked="OnEditSubmissionClicked" CommandParameter="{Binding .}" BackgroundColor="#777DA7" />
+                                <Button Text="Delete" Clicked="OnDeleteSubmissionClicked" CommandParameter="{Binding .}" BackgroundColor="Red" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
